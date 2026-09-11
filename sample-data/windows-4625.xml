@@ -1,0 +1,22 @@
+<Events xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <Event>
+    <System><EventID>4625</EventID><TimeCreated SystemTime="2026-09-11T12:00:00Z" /></System>
+    <EventData><Data Name="TargetUserName">administrator</Data><Data Name="IpAddress">198.51.100.7</Data><Data Name="SubStatus">0xC000006A</Data></EventData>
+  </Event>
+  <Event>
+    <System><EventID>4625</EventID><TimeCreated SystemTime="2026-09-11T12:01:00Z" /></System>
+    <EventData><Data Name="TargetUserName">administrator</Data><Data Name="IpAddress">198.51.100.7</Data><Data Name="SubStatus">0xC000006A</Data></EventData>
+  </Event>
+  <Event>
+    <System><EventID>4625</EventID><TimeCreated SystemTime="2026-09-11T12:02:00Z" /></System>
+    <EventData><Data Name="TargetUserName">administrator</Data><Data Name="IpAddress">198.51.100.7</Data><Data Name="SubStatus">0xC000006A</Data></EventData>
+  </Event>
+  <Event>
+    <System><EventID>4625</EventID><TimeCreated SystemTime="2026-09-11T12:03:00Z" /></System>
+    <EventData><Data Name="TargetUserName">administrator</Data><Data Name="IpAddress">198.51.100.7</Data><Data Name="SubStatus">0xC000006A</Data></EventData>
+  </Event>
+  <Event>
+    <System><EventID>4625</EventID><TimeCreated SystemTime="2026-09-11T12:04:00Z" /></System>
+    <EventData><Data Name="TargetUserName">administrator</Data><Data Name="IpAddress">198.51.100.7</Data><Data Name="SubStatus">0xC000006A</Data></EventData>
+  </Event>
+</Events>

@@ -1,0 +1,6 @@
+Sep 11 10:15:01 lab sshd[1200]: Failed password for invalid user admin from 203.0.113.42 port 50100 ssh2
+Sep 11 10:15:42 lab sshd[1201]: Failed password for root from 203.0.113.42 port 50101 ssh2
+Sep 11 10:16:07 lab sshd[1202]: Failed password for invalid user test from 203.0.113.42 port 50102 ssh2
+Sep 11 10:17:11 lab sshd[1203]: Failed password for ubuntu from 203.0.113.42 port 50103 ssh2
+Sep 11 10:18:55 lab sshd[1204]: Failed password for invalid user admin from 203.0.113.42 port 50104 ssh2
+Sep 11 11:00:00 lab sshd[1300]: Accepted password for student from 192.0.2.25 port 51000 ssh2
