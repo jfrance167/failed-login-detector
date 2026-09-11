@@ -112,6 +112,7 @@ def parse_timestamp(value: str) -> datetime:
     normalized = value.strip()
     if normalized.endswith("Z"):
         normalized = normalized[:-1] + "+00:00"
+    normalized = re.sub(r"([+-]\d{2})(\d{2})$", r"\1:\2", normalized)
     try:
         timestamp = datetime.fromisoformat(normalized)
     except ValueError as exc:
