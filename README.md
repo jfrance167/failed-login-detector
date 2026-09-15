@@ -7,6 +7,16 @@ Security Event 4625 XML, live Windows Security logs, and generic JSON Lines.
 This project is intended for systems and logs you own or are authorized to
 monitor. It does not generate login attempts or modify accounts.
 
+## Security Notice
+
+This repository is an educational defensive-security lab. It is not a
+production monitoring system, and its detections must be validated before they
+are used for operational decisions. Analyze only logs and systems you own or
+are explicitly authorized to investigate. Included events and addresses are
+synthetic or reserved for documentation; no real credentials are included.
+
+Do not deploy this project in production.
+
 ## What it detects
 
 - Repeated failures from one source, including password spraying across users
