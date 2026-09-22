@@ -25,6 +25,9 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
 
+      - name: Install runtime dependencies
+        run: python -m pip install --disable-pip-version-check -r requirements.txt
+
       - name: Compile source
         run: python -m py_compile failed_login_detector.py tests/test_failed_login_detector.py
 
