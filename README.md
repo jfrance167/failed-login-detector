@@ -29,6 +29,19 @@ Do not deploy this project in production.
 - UTF-8 and common UTF-16 Windows XML exports
 - SSH password, public-key, invalid-user, maximum-attempt, and PAM failures
 
+## Setup
+
+Use Python 3.10 or later and an isolated environment. The Windows XML parser uses
+the pinned `defusedxml` dependency to reject unsafe XML constructs.
+
+```powershell
+python -m venv .venv
+.venv\Scripts\python -m pip install -r requirements.txt
+# Use .venv\Scripts\python for the commands below, or activate the environment.
+```
+
+On Linux/macOS, use `.venv/bin/python` for installation and execution.
+
 ## Quick proof that it works
 
 Run the built-in deterministic demonstration:
@@ -117,7 +130,7 @@ alert is found. Processing and input errors return exit code 2.
 python -m unittest discover -s tests -v
 ```
 
-The project uses only the Python standard library. Tests and demonstrations use
+The project uses Python and the pinned `defusedxml` XML parser. Tests and demonstrations use
 only synthetic documentation addresses and local files; they perform no login
 attempts and contact no network hosts. GitHub Actions runs the suite on Python
 3.10 and 3.13 for every push and pull request.
@@ -133,3 +146,19 @@ attempts and contact no network hosts. GitHub Actions runs the suite on Python
 - This tool identifies threshold-based patterns. Production detection should
   also account for allowlists, asset criticality, identity context, and known
   administrative activity.
+
+## Repository map
+
+```text
+failed-login-detector/
+|-- .github/
+|-- .gitignore
+|-- README.md
+|-- SECURITY.md
+|-- failed_login_detector.py
+|-- requirements.txt
+|-- sample-data/
+`-- tests/
+```
+
+Follow the setup and safety boundaries above before running or deploying any code.
