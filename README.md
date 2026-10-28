@@ -162,3 +162,7 @@ failed-login-detector/
 ```
 
 Follow the setup and safety boundaries above before running or deploying any code.
+
+## License
+
+Original contributions are licensed under [MIT](LICENSE). See [licensing scope](LICENSING.md) for third-party exclusions.
